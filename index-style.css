@@ -1,0 +1,297 @@
+/********** General Sytling **********/
+body {font-family: 'Montserrat', sans-serif;}
+body:nth-child(n) {outline-color: #5d5d5d;}
+p,li {font-family: 'Roboto', sans-serif;}
+header h1 {
+	color: #181818;
+	font-size: 3rem;
+	margin: 0;
+}
+header {text-align: left;}
+header p {font-size: 1.7rem;}
+strong {background-color: #FFE191;}
+.stronger {
+	font-size: 2rem;
+	background-image: linear-gradient(#ffffff00 65%, #FF9D5B 55%);
+	display: inline;
+}
+h3 {text-align: center;}
+
+/********** Navigation bar **********/
+nav a {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: #2f2f2f;
+}
+nav {
+	margin: 25px 15vw 0px 15vw;
+	font-size: 1.6rem;
+}
+.logo {
+	margin-left: 10px;
+	display: inline;
+}
+.nav-items {
+	display: inline;
+	float: right;
+}
+.nav-items a {
+	margin-right: 30px;
+	padding: 0 5px 0 5px;
+	color: #5d5d5d;
+	background-position: 0 100%;
+    background-repeat: repeat-x;
+	background-size: 1px 1px;
+	background-image: linear-gradient(transparent 65%, #78CC87 55%);
+	transition: background-size .2s;
+}
+.nav-items a:hover {
+	background-size: 30px 30px;
+}
+.nav-items a:focus {
+	outline: 0;
+	border-radius: 5px;
+	background-size: 100px 100px;
+}
+.nav-toggle img {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	height: 40px;
+}
+a.current {color: #78CC87;}
+
+/********** Header **********/
+.welcome {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 5vw;
+	margin-top: 150px;
+	margin-bottom: 200px;
+	height: 50vh;
+}
+.welcome-item {min-width: 500px; outline: 0;}
+.welcome-item img {
+	max-width: 450px;
+	width: 100%;
+	margin-left: 20px;
+}
+.flip {
+	height: 65px;
+	width: 335px;
+	overflow: hidden;
+}
+.title {
+	color: #FF9D5B;
+	animation: hide 7s infinite;
+}
+.title:hover, .title:focus {
+	cursor: pointer;
+	color: transparent;
+	-webkit-text-stroke: 2px #FF9D5B;
+	transition: 0.1s ease;
+	outline: 0;
+}
+.flip h1:first-child {
+	animation: show 7s infinite;
+}
+@keyframes show {
+	0% {margin-top: 60px; opacity: 0;}
+	20% {margin-top: 0px; opacity: 1;}
+	50% {margin-top: -60px;}
+	80% {margin-top: -120px;}
+	100% {margin-top: -180px;}
+}
+@keyframes hide {
+	0% {opacity: 0;}
+	10% {opacity: 1;}
+	83% {opacity: 1;}
+	90% {opacity: 0;}
+	100% {opacity: 0;}
+}
+/********** Main Section **********/
+/* My Process */
+.process {
+	display: flex;
+	justify-content: center;
+	margin-top: 30vh;
+}
+.process-item {
+	width: 225px;
+	margin: 0 10px 0 10px;
+	text-align: center;
+	outline-color: #E8E8E8; 
+}
+.highlight {
+	font-size: 1.3rem;
+	display: inline;
+	background: linear-gradient(100deg, #FFE191 99%, transparent 1%) no-repeat;
+	background-size: 0 100%;
+	padding-right: 2%;
+	transition: background-size 0.5s;
+}
+.highlight:hover, .highlight:focus {
+	background-size: 100% 100%;
+	cursor: pointer;
+	outline: 0;
+}
+	
+/* Tabbed Menu Features */
+.features {
+	display: flex;
+	justify-content: center;
+	margin-top: 20vh;
+}
+button:focus {outline: 0; color: #5d5d5d;}
+.features a:focus {outline: 0; color: #5d5d5d;}
+.accordian {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	text-align: left;
+	background-color: white;
+	color: #dddddd;
+	width: 500px;
+	height: 70px;
+	border: none;
+}
+.accordian:hover, .accordian:active {
+	cursor: pointer;
+	color: #5d5d5d;
+	transition: 0.5s linear;
+}
+.tabActive {
+	color: #5d5d5d;
+}
+.accordian::after {
+	content: "";
+	width: 500px;
+	height: 2px;
+	display: inline-block;
+	background-color: #E8E8E8;
+}
+.openPanel {
+	opacity: 1;
+	padding-bottom: 15px;
+	transition: 0.5s ease-in;
+}
+.panel {
+	max-height: 0;
+	overflow: hidden;
+	color: #5d5d5d;
+	margin-left: 5px;
+	font-size: 1.2rem;
+}
+.panel a {
+	font-size: 1rem;
+	color: #dddddd;
+	text-decoration: none;
+}
+.window {
+	width: 600px;
+	height: 400px;
+	margin-left: 20px;
+	background-color: #E8E8E8;
+}
+/* Works Collage */
+
+
+/********** Footer **********/
+footer {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.textbox {
+	margin: 0 20vw;
+	text-align: left;
+	height: 55vh;
+}
+#contact {
+	height: 60vh;
+}
+small {
+	color: #5d5d5d;
+}
+.icons a {
+	outline: 0;
+}
+.icons::after {
+	position: relative;
+	z-index: 2;
+	content: "";
+	width: 500px;
+	height: 2px;
+	background-color: #5d5d5d;
+	display: block;
+	left: 23%;
+	border-bottom: 10px solid white;
+}
+/********** Media Queries **********/
+/*For XS screen*/
+@media (max-width: 800px) {
+	header h1 { 
+		font-size: 2.2rem;
+		text-align: center;
+	}
+	header p {font-size: 1.5rem;}
+	nav {
+		margin: 35px 20px 0px 20px;
+		font-size: 1.3rem
+	}
+	.nav-items a {margin-right: 15px;}
+	.stronger {font-size: 1.5rem;}
+	.process {flex-wrap: wrap;}
+	.process-item {width: 400px; margin-bottom: 50px; text-align: left;}
+	.highlight {font-size: 1.2rem;}
+	.flip {
+		height: 45px;
+		width: 420px;
+		overflow: hidden;
+	}
+	@keyframes show {
+		0% {margin-top: 45px; opacity: 0;}
+		20% {margin-top: 0px; opacity: 1;}
+		50% {margin-top: -45px;}
+		80% {margin-top: -90px;}
+		100% {margin-top: -150px;}
+	}
+	@keyframes hide {
+		0% {opacity: 0;}
+		10% {opacity: 1;}
+		83% {opacity: 1;}
+		90% {opacity: 0;}
+		100% {opacity: 0;}
+	}
+} 
+
+/*For S screen*/
+@media (max-width: 1250px) {
+	.welcome {
+		margin-top: 150px;
+		margin-bottom: 250px;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.welcome-item {min-width: 0;}
+	.welcome-item img {
+		margin: 0 auto;
+		margin-top: 70px;
+	}
+	.welcome-item p {
+		text-align: center;
+		margin: 25px 5px;
+	}
+	.features {
+		flex-wrap: wrap;
+		margin-top: 10vh;
+	}
+	.accordian {width: 85vw;}
+	.accordian::after {display: block; width: 82vw;}
+	.tabs {margin-bottom: 20px;}
+	.window {
+		margin-left: 0;
+		width: 85vw;
+	}
+}

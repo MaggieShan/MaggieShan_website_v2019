@@ -1,0 +1,49 @@
+header {
+    margin-top: 100px;
+    padding-bottom: 100px; 
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.project {
+    display: flex;
+}
+.full, .left, .right, .box1, .box2, .box3 {
+    padding: 50px;
+    margin-bottom: 10px;
+    height: 400px;
+}
+.full {
+    background-color: #def4ee;
+    width: 80vw;
+}
+.left, .right {
+    padding-right: 0;
+    width: 40vw;
+    background-color: antiquewhite;
+}
+.left {
+    margin-right: 5px;
+}
+.box1, .box2, .box3 {
+    width: 25vw;
+    padding-right: 0;
+    background-color: antiquewhite;
+}
+.box1, .box2 {
+    margin-right: 5px;
+}
+
+@media (max-width: 700px) {
+    .project {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 80vw;
+        padding-right: 50px;
+    }
+}

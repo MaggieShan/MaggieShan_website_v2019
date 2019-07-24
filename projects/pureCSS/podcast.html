@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="podcast.css">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Playlist</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="../../index.html"><img src=".././img/name.svg"></a>
+        </div>
+        <div class="nav-items">
+            <a href="../../work.html">Work</a>
+            <a href="../../about.html">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <header>
+        <h2>Playlist</h2>
+        <p>A playlist interface with css and js</p>
+    </header>
+    <div class="project">
+        <div class="frontborder"></div>
+        <div class="frontPhone">
+            <div class="reflection"></div>
+            <div class="notch"></div>
+            <div class="screen">
+                <div class="background"></div>
+                <div class="circle"></div>
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="text">
+                    <div class="title"><h1>TOP 10 SUMMER SONGS</h1></div>
+                    <div class="playlist">
+                        <div class="ul">
+                            <li onclick="changeName(); changeSong();">
+                                <div class="play"></div>
+                                <div class="cover"></div>
+                                <p class="description">SUMMER PARADISE by Simple Plan</p>
+                            </li>
+                            <li onclick="changeName(); changeSong();">
+                                <div class="play"></div>
+                                <div class="cover"></div>
+                                <p class="description">SOBER by Childish Gambino</p>
+                            </li>
+                            <li onclick="changeName(); changeSong();">
+                                <div class="play"></div>
+                                <div class="cover"></div>
+                                <p class="description">SUMMER NIGHTS by John Travolta</p>
+                            </li>
+                            <li onclick="changeName(); changeSong();">
+                                    <div class="play"></div>
+                                    <div class="cover"></div>
+                                    <p class="description">SUMMER by Calvin Harris</p>
+                                </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nowPlaying">
+                <div class="playingText">
+                    <p>NOW PLAYING:</p>
+                    <p id="current">SUMMER SONG by Sunshine</p>
+                </div>
+                <audio id="song" controls="" autoplay="" name="media"><source src="https://rjnet.rjlca.com/en-CA/resources_dev/marketing/Audio/rj-03.mp3" type="audio/mpeg"></audio>
+            </div>
+        </div>
+        <div class="back">
+            <div class="backborder"></div>
+            <div class="backPhone">
+                <div class="notch backPosition"></div>
+                <div class="screen">
+                    <div class="topbackground"></div>
+                    <p class="backscreen">SUMMER SONG by Sunshine</p>
+                    <div class="album"></div>
+                    <div class="album a1"></div>
+                    <div class="album a2"></div>
+                </div>
+                <div class="nowPlayingBack">
+                    <div class="bar"></div>
+                    <div class="progress"></div>
+                    <div class="playback"></div>
+                    <div class="next">
+                        <div class="arrow1"></div>
+                        <div class="arrow2"></div>
+                    </div>
+                    <div class="prev">
+                        <div class="arrow1"></div>
+                        <div class="arrow2"></div>
+                    </div>
+                </div>
+                <div class="backbottom"></div>
+                <div class="backreflection"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="position">
+        <div id="contact">
+            <h3> Connect with me</h3>
+            <div class="icons">
+                <a href="#email"><img src="../../img/email.svg"></a>
+                <a href="#linkedin"><img src="../../img/linkedin.svg"></a>
+                <a href="#github"><img src="../../img/github.svg"></a>
+            </div>
+        </div>
+        <small class="copyright">
+        </small>
+    </footer>
+    <script>
+        function changeName() {
+            document.getElementById('current').innerHTML = event.target.textContent;
+        }
+        function changeSong(num) {
+            var song = document.getElementById('song');
+            switch(num) {
+                case 1:
+                    song.src = "";
+                    break; 
+                case 2:
+                    song.src = "";
+                    break; 
+                case 3:
+                    song.src = "";
+                    break; 
+                case 4:
+                    song.src = "";
+                    break; 
+            }
+        }
+    </script>
+</body>
+</html>

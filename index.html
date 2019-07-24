@@ -1,0 +1,118 @@
+<!-- WELCOME TO MY PERSONAL WEBSITE!
+Hope you enjoy and feel free to send me feedback :) -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta author="Maggie Shan">
+		<meta description="Maggie Shan's personal website to showcase her design and code portfolio">
+		
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="index-style.css">
+		<script src="script.js"></script>
+		
+		<link rel="shortcut icon" type="image/x-icon" href=".img/logo.png">
+		<title>Maggie Shan</title>
+	</head>
+	<body>
+		<nav>
+			<div class="logo">
+				<a href="index.html"><img src="./img/name.svg"></a>
+			</div>
+			<div class="nav-items">
+				<a href="work.html"><span class="animate">Work</span></a>
+				<a href="about.html"><span class="animate">About</span></a>
+				<a href="#contact"><span class="animate">Contact</span></a>
+			</div>
+		</nav>
+		<header class="welcome">
+			<div class="welcome-item" >
+				<h1>Hi, I'm Maggie Shan,</h1>
+				<div class="flip">
+					<h1 class="title" tabindex="0">a developer.</h1>	
+					<h1 class="title" tabindex="0">a designer.</h1>	
+					<h1 class="title" tabindex="0">a student.</h1>	
+				</div>
+				<p>I love creating ideas and solutions that <strong>come to life!</strong></strong></p>
+			</div>
+			<div class="welcome-item">
+				<img src="./img/maggie.svg">
+			</div> 
+		</header>	
+		<main>
+			<section class="process">
+				<div class="process-item">
+					<img src="" alt="Explore">
+					<p><span class="stronger">Explore</span></p>
+					<p class="highlight" tabindex="0">I love continuous learning and finding potential problems through user research and experiementation.</p>
+				</div>
+				<div class="process-item">
+					<img src="" alt="Create">
+					<p><span class="stronger">Create</span></p>
+					<p class="highlight" tabindex="0">I design creative solutions, prototypes and wireframes</p>
+				</div>
+				<div class="process-item">
+					<img src="" alt="Extend">
+					<p><span class="stronger">Extend</span></p>
+					<p class="highlight" tabindex="0">I am always looking for ways to improve and build scalable projects open to global audiences</p>
+				</div>
+			</section>
+			<section class="features">
+				<div class="tabs">
+					<button class="accordian" onclick="togglePanel()" tabindex="0">About Me</button>
+					<div class="panel">
+						<p>This is about me</p>
+						<a href="#about">Learn more</a>
+					</div>
+					<button class="accordian" onclick="togglePanel()" tabindex="0">Skills</button>
+					<div class="panel">
+						<ul>
+							<li>HTML/CSS/JS</li>
+							<li>Scheme/C/Java </li>
+							<li>Photoshop/Illustrator</li>
+							<li>Sketch/Figma</li>
+						</ul>
+					</div>
+					<button class="accordian" onclick="togglePanel()" tabindex="0">Works</button>
+					<div class="panel">
+						<p>Look at my projects</p>
+						<a href="#works">See my projects</a>
+					</div>
+				</div>
+				<div class="window"></div>
+			</section>
+			
+			<section class="collage">
+				<div class="container">
+					<img src="" alt="">
+					<img src="" alt="">
+					<img src="" alt="">
+					<img src="" alt="">
+					<img src="" alt="">
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div id="contact">
+				<div class="textbox">
+					<div class="box1">
+						<p>Have a project idea? Just want some coffee?</p>
+						<p>That's perfect.</p>
+					</div>
+					<div class="box2">
+						<p>Let's connect!</p>
+					</div>
+				</div>
+				<div class="icons">
+					<a href="#email"><img src="" alt="Email"></a>
+					<a href="#linkedin"><img src="" alt="Linkedin"></a>
+					<a href="#github"><img src="" alt="Github"></a>
+					<a href="#codepen"><img src="" alt="Codepen"></a>
+				</div>
+			</div>
+			<small>&copy;Hand coded by Maggie Shan 2019</small>
+		</footer>
+	</body>
+</html> 

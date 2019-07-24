@@ -1,0 +1,610 @@
+header {
+	background-color: white;
+	text-align: center;
+	padding: 50px;
+}
+/* *********************CREDIT CARD *************************** */
+.credit-card {
+	background-color: #FEF1BD;
+	margin-top: 50px;
+	padding: 250px 0;
+}
+.credit-card p {
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	text-shadow: 3px 3px 3px #2A2954;
+	letter-spacing: 2px;
+}
+
+/*Flip animation*/
+.flip-wrap {
+	background-color: transparent;
+	width: 400px;
+	height: 275px;
+	border-radius: 15px;
+	perspective: 1000px;
+}
+.position {
+	position: absolute;
+	top: 45%;
+	left: 40%;
+}
+@media (max-width: 1050px) {
+	.position {
+		left: 30%;
+	}
+}
+@media (max-width: 600px) {
+	.position {
+		left: 10%;
+	}
+}
+.flip-wrap:hover .flip {
+	transition: transform 0.5s;
+	transform: translateY(10px);
+}
+.flip-wrap:active .flip {
+	transition: transform 1s;
+	transform: translateY(10px) rotateY(180deg);
+}
+.flip {
+	position: relative;
+	width: 100%;
+	height: 100%; 
+	text-align: center;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+}
+.front, .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 15px;
+	box-shadow: 15px 30px 35px #B9A863;
+	background-image: linear-gradient(-30deg, #393773 30%, #A5E99C);
+}
+
+.reflection {
+	background-color: white;
+	opacity: 0.05;
+	height: 500px;
+	width: 100px;
+	top: -95%;
+	position: relative;
+	overflow: hidden;
+	transform: skewX(-20deg);
+}
+
+/*Mastercard logo*/
+.red, .yellow {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	display: inline-block;
+	top: 76%;
+	left: 82%;
+	position: absolute;
+}
+.red {
+	background-color: #eb001b;	
+}
+.yellow {
+	margin-left: -20px;
+	background-color: rgba(255, 209, 0, 0.6);
+}
+
+/*Front of card*/
+.front {
+	background-image: linear-gradient(30deg, #393773 30%, #A5E99C);
+} 
+.card-chip {
+	width: 50px; 
+	height: 35px;
+	background-image: linear-gradient(120deg, #DBBD51 40%, #78682D);
+	border-radius: 5px;
+	position: relative;
+	top: 20%;
+	left: 10%;
+}
+.box {
+	width: 17px;
+	height: 5px;
+	border: 1.3px solid #78682D;
+	overflow: hidden;
+}
+.box1 {
+	width: 10px;
+	height: 10px;
+	border: 1.3px solid #78682D;
+	overflow: hidden;
+}
+.bl {
+	float: left;
+}
+.br {
+	float: right;
+}
+.b0 {
+	border-radius: 5px 0 0 0;
+}
+.b1 {
+	border-radius: 0 5px 0 0;
+}
+.b4 {
+	width: 25px;
+	height: 12px;
+	border-radius: 0 0 0 5px;
+}
+.card-number {
+	position: relative;
+	top: 28%;
+	right: 10%;
+	font-size: 1.2rem;
+	letter-spacing: 3px;
+}
+.name p, .date p {
+	text-align: left;
+	line-height: 0.3;
+	font-size: 0.8rem;
+}
+.name {
+	position: relative;
+	top: 39%;
+	left: 10%;
+}
+.date {
+	position: relative;
+	top: 27%;
+	left: 49%;
+}
+.label {
+	font-size: 0.5rem;
+}
+
+/*Back of card*/
+.back {
+	transform: rotateY(180deg);
+}
+.swipe {
+	background-color: #15142A;
+	width: 400px;
+	height: 50px;
+	border-radius: 10px;
+	position: relative;
+	top: 10%;
+}
+.swipe-reflect {
+	background-color: #FFFDD8;
+	opacity: 0.15;
+	width: 25px;
+	height: 50px;
+	right: 25%;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	transform: skewX(-30deg);
+}
+.signature {
+	background-color: #FEF9E7;
+	width: 275px;
+	height: 40px;
+	border-radius: 5px;
+	position: relative;
+	top: 20%;
+	left: 7%;
+	overflow: hidden;
+}
+.stripe {
+	background-color: #B9A863; 
+	opacity: 0.25;
+	width: 10px;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	margin-right: 5px;
+	transform: skewX(20deg);
+}
+.cvc {
+	background: #FEF9E7;
+	width: 50px;
+	height: 40px;
+	border-radius: 5px;
+	position: relative;
+	top: 6%;
+	left: 80%;
+	overflow: hidden;
+}
+.cvc p {
+	margin: 4px auto;
+	font-size: 1.3rem;
+	text-shadow: none;
+	color: black;
+}
+.fine-print { 
+	max-width: 250px; 
+	position: relative;
+	top: 20%;
+	left: 8%;
+}
+.fine-print p {
+	font-size: 0.6rem;
+	text-align: left;
+}
+
+/* *********************CREDIT CARD 1*************************** */
+.credit-card1 {
+	background-color: #FFD7AA;
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	text-shadow: 3px 3px 3px #2A2954;
+	letter-spacing: 2px;
+	padding: 250px 0;
+}
+
+/*Flip animation*/
+.flip-wrap1 {
+	background-color: transparent;
+	width: 400px;
+	height: 275px;
+	border-radius: 15px;
+	perspective: 1000px;
+}
+.position1 {
+	position: absolute;
+	top: 100%;
+	left: 40%;
+}
+@media (max-width: 1050px) {
+	.position1 {
+		left: 30%;
+	}
+}
+@media (max-width: 600px) {
+	.position1 {
+		left: 10%;
+	}
+}
+.flip-wrap1:hover .flip1 {
+	transition: transform 0.5s;
+	transform: translateY(10px);
+}
+.flip-wrap1:active .flip1 {
+	transition: transform 1s;
+	transform: translateY(10px) rotateY(180deg);
+}
+.flip1 {
+	position: relative;
+	width: 100%;
+	height: 100%; 
+	text-align: center;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+}
+.front1, .back1 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 15px;
+	box-shadow: 15px 30px 35px #D6A873;
+	background-image: linear-gradient(-30deg, #91C0C9 30%, #6781BC);
+}
+
+.reflection1 {
+	background-color: white;
+	opacity: 0.06;
+	height: 300px;
+	width: 100px;
+	top: -75%;
+	left: 10%;
+	position: relative;
+	overflow: hidden;
+	transform: skewX(-20deg);
+	z-index: 3;
+}
+
+/*Mastercard logo*/
+.red1, .yellow1 {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	display: inline-block;
+	top: 76%;
+	left: 82%;
+	position: absolute;
+}
+.red1 {
+	background-color: #eb001b;	
+}
+.yellow1 {
+	margin-left: -20px;
+	background-color: rgba(255, 209, 0, 0.6);
+}
+
+/*Front of card*/
+.front1 {
+	background-image: linear-gradient(-30deg, #91C0C9 5%, #6781BC);
+} 
+.triangle1 {
+	position: relative;
+	top: -177%;
+	left: 1.5%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px 100px 0 0;
+	border-color: #abc4df transparent transparent transparent;
+	opacity: 0.5;
+}
+.triangle2 {
+	position: relative;
+	top: -119%;
+	left: 1.5%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px 0 0 100px;
+	border-color: transparent transparent transparent #abc4df;
+	opacity: 0.5;
+}
+.triangle3 {
+	position: relative;
+	top: -163%;
+	left: 1.5%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px 0 30px 50px;
+	border-color: transparent transparent transparent #abc4df;
+	opacity: 0.5;
+}
+.triangle4 {
+	position: relative;
+	top: -215%;
+	left: 1.5%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px 0 30px 50px;
+	border-color: transparent transparent transparent #abc4df;
+	opacity: 0.5;
+}
+.triangle5 {
+	position: relative;
+	top: -229%;
+	left: 1.5%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px 90px 50px 0;
+	border-color: transparent #abc4df transparent transparent;
+	opacity: 0.5;	
+}
+.triangle6 {
+	position: relative;
+	top: -265%;
+	left: 24%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px 0 50px 90px;
+	border-color: transparent transparent transparent #abc4df;
+	opacity: 0.5;	
+}
+.triangle7 {
+	position: relative;
+	top: -321%;
+	left: 4%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px 55px 30px 0;
+	border-color: transparent #abc4df transparent transparent;
+	opacity: 0.5;	
+}
+.triangle8 {
+	position: relative;
+	top: -289%;
+	left: 4%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px 55px 30px 0;
+	border-color: transparent #abc4df transparent transparent;
+	opacity: 0.5;	
+}
+.triangle9 {
+	position: relative;
+	top: -353%;
+	left: 30%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 50px 30px 0;
+	border-color: transparent #abc4df transparent transparent;
+	opacity: 0.5;	
+}
+.triangle10 {
+	position: relative;
+	top: -337%;
+	left: 30%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px 50px 20px 0;
+	border-color: transparent #abc4df transparent transparent;
+	opacity: 0.5;	
+}
+.triangle11 {
+	position: relative;
+	top: -378%;
+	left: 45%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 0 15px 40px;
+	border-color: transparent transparent transparent #abc4df;
+	opacity: 0.5;	
+}
+.triangle12 {
+	position: relative;
+	top: -368%;
+	left: 45%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 0 15px 40px;
+	border-color: transparent transparent transparent #abc4df;
+	opacity: 0.5;	
+}
+.triangle13 {
+	position: relative;
+	top: -391%;
+	left: 55%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 0 20px 100px;
+	border-color: transparent transparent transparent #abc4df;
+	opacity: 0.5;	
+}
+.card-chip1 {
+	width: 50px; 
+	height: 35px;
+	background-image: linear-gradient(120deg, #DBBD51 40%, #78682D);
+	border-radius: 5px;
+	position: relative;
+	top: 20%;
+	left: 10%;
+	z-index: 2;
+}
+.box-1 {
+	width: 17px;
+	height: 5px;
+	border: 1.3px solid #78682D;
+	overflow: hidden;
+}
+.box1-1 {
+	width: 10px;
+	height: 10px;
+	border: 1.3px solid #78682D;
+	overflow: hidden;
+}
+.bl1 {
+	float: left;
+}
+.br1 {
+	float: right;
+}
+.b0-1 {
+	border-radius: 5px 0 0 0;
+}
+.b1-1 {
+	border-radius: 0 5px 0 0;
+}
+.b4-1 {
+	width: 25px;
+	height: 12px;
+	border-radius: 0 0 0 5px;
+}
+.card-number1 {
+	position: relative;
+	top: 25%;
+	right: 4%;
+	font-size: 1.5rem;
+	letter-spacing: 3px;
+	z-index: 2;
+}
+.name1 {
+	top: 33%;
+	left: 10%;
+	font-size: 1rem;
+	text-align: left;
+	position: relative;
+	line-height: 0.3;
+	z-index: 2;
+}
+.date1 {
+	text-align: left;
+	position: relative;
+	top: 19%;
+	left: 43%;
+	line-height: 0.3;
+	z-index: 2;
+}
+.label1 {
+	font-size: 0.6rem;
+	z-index: 2;
+}
+
+/*Back of card*/
+.back1 {
+	transform: rotateY(180deg);
+	z-index: 4;
+}
+.swipe1 {
+	background-image: linear-gradient(-20deg, #505982, #393773);
+	width: 400px;
+	height: 50px;
+	border-radius: 10px;
+	position: relative;
+	top: 10%;
+}
+.swipe-reflect1 {
+	background-color: #FFFDD8;
+	opacity: 0.15;
+	width: 25px;
+	height: 50px;
+	right: 25%;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	transform: skewX(-30deg);
+}
+.signature1 {
+	background-color: #FFFFFF;
+	width: 275px;
+	height: 40px;
+	border-radius: 5px;
+	position: relative;
+	top: 20%;
+	left: 7%;
+	overflow: hidden;
+}
+.stripe1 {
+	background-color: #DBBA95; 
+	opacity: 0.25;
+	width: 10px;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	margin-right: 5px;
+	transform: skewX(20deg);
+}
+.cvc1 {
+	background: #FFFFFF;
+	width: 50px;
+	height: 40px;
+	border-radius: 5px;
+	position: relative;
+	top: 6%;
+	left: 80%;
+	overflow: hidden;
+}
+.cvc1 p {
+	margin: 4px auto;
+	font-size: 1.3rem;
+	text-shadow: none;
+	color: black;
+}
+.fine-print1 {
+	max-width: 250px; 
+	font-size: 0.5rem;
+	text-align: left;
+	position: relative;
+	top: 20%;
+	left: 8%;
+}
