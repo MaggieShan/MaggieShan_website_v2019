@@ -1,37 +1,89 @@
+<!-- WELCOME TO MY PERSONAL WEBSITE!
+Hope you enjoy and feel free to send me feedback :) -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Me | Maggie Shan</title>
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about-style.css">
-</head>
-<body>
-    <nav>
-        <div class="logo">
-            <a href="index.html"><img src="./img/name.svg"></a>
-        </div>
-        <div class="nav-items">
-            <a href="work.html">Work</a>
-            <a class="current" href="about.html">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-    
-    <footer>
-        <div id="contact">
-            <h3> Connect with me</h3>
-            <div class="icons">
-                <a href="#email"><img src="./img/email.svg"></a>
-                <a href="#linkedin"><img src="./img/linkedin.svg"></a>
-                <a href="#github"><img src="./img/github.svg"></a>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta author="Maggie Shan">
+		<meta description="Maggie Shan's personal website to showcase her design and code portfolio">
+		
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto&display=swap" rel="stylesheet">
+		<!-- AOS library for scroll animations -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="about-style.css">
+		<script src="script.js"></script>
+		
+		<link rel="shortcut icon" type="image/x-icon" href=".img/fav.png">
+		<title>About Me | Maggie Shan</title>
+	</head>
+    <body>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="./img/name.svg"></a>
             </div>
-        </div>
-        <small class="copyright">
-        </small>
-    </footer>
-</body>
+            <div class="nav-items">
+                <a href="work.html"><span class="animate">Work</span></a>
+                <a href="about.html"><span class="animate">About</span></a>
+                <a href="#contact"><span class="animate">Contact</span></a>
+            </div>
+        </nav>
+        <main>
+            <article class="introduction" data-aos="fade-up" data-aos-duration="1500">
+                <div class="left">
+                    <img src="./img/profile.jpg" alt="profile">
+                    <!-- social media links, resume link-->
+                </div>
+                <section class="about">
+                    <h2>Nice to meet you!</h2>
+                    <p>My name is Maggie Shan and I'm currently a student  pursuing a bachelor in both Computer Science at the University of Waterloo and Business Administration at the University of Wilfrid Laurier.</p>
+                    <p>As someone who loves hands-on learning and has an eye for the smallest details, I love using both design and code to build new ideas and solve everyday problems.</p>
+                    <p>In studying these two fields, I hope to better understand both the technical and financial aspects of a business and further expand my knowledge to integrate the two skill sets for a future career in software development and UX/UI design.</p>
+                </section>
+            </article>
+            <article class="experiences" data-aos="fade-up" data-aos-duration="1500">
+                <h3>My Experiences</h3>
+                <section class="role" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="./preview.jpg" alt="preview" class="preview">
+                    <div class="description">
+                        <h3>Job</h3>
+                        <p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </p>
+                    </div>
+                </section>
+                <section class="role" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="./preview.jpg" alt="preview" class="preview">
+                    <div class="description">
+                        <h3>Job</h3>
+                        <p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </p>
+                    </div>
+                </section>
+                <section class="role" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="./preview.jpg" alt="preview" class="preview">
+                    <div class="description">
+                        <h3>Job</h3>
+                        <p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </p>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <!-- AOS library for scroll animations -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script> AOS.init(); </script>
+    </body>
 </html>
