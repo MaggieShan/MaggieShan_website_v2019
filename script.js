@@ -30,7 +30,4 @@ function togglePanel() {
         event.target.nextElementSibling.style.minHeight = "150px";
         event.target.nextElementSibling.classList.add("openPanel");event.target.classList.add("tabActive");
     }
-
-    
 }
-
