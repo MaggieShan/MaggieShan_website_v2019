@@ -1,33 +1,33 @@
 // Tabbed Feature Menu
+// To make sure a tab opens when clicked, while other active ones close
 var panel = document.getElementsByClassName("panel");
 function togglePanel() {
+    // If there exists a tab before the current one
     if (event.target.previousElementSibling) {
-        if (event.target.previousElementSibling.style.maxHeight) {
-            event.target.previousElementSibling.style.maxHeight = null;
-            event.target.previousElementSibling.previousElementSibling.classList.remove("tabActive");
-        }
+        event.target.previousElementSibling.style.minHeight = null;
+        event.target.previousElementSibling.previousElementSibling.classList.remove("tabActive");
+        // If there exists 2 tabs before the current one 
         if (event.target.previousElementSibling.previousElementSibling.previousElementSibling) {
-            if (event.target.previousElementSibling.previousElementSibling.previousElementSibling.style.maxHeight) {
-                event.target.previousElementSibling.previousElementSibling.previousElementSibling.style.maxHeight = null;
-                event.target.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.classList.remove("tabActive");
-            }
+            event.target.previousElementSibling.previousElementSibling.previousElementSibling.style.minHeight = null;
+            event.target.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.classList.remove("tabActive");
         }
     }
+    // If there exists a tab after the current one
     if (event.target.nextElementSibling.nextElementSibling) {
-        if (event.target.nextElementSibling.nextElementSibling.nextElementSibling.style.maxHeight) {
-            event.target.nextElementSibling.nextElementSibling.nextElementSibling.style.maxHeight = null;
-            event.target.nextElementSibling.nextElementSibling.classList.remove("tabActive");
-        }
+        event.target.nextElementSibling.nextElementSibling.nextElementSibling.style.minHeight = null;
+        event.target.nextElementSibling.nextElementSibling.classList.remove("tabActive");
+        // If there there exists 2 tabs after the current one
         if (event.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling) {
-            event.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.maxHeight = null;
+            event.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.minHeight = null;
             event.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.classList.remove("tabActive");
         }
     } 
-    if(event.target.nextElementSibling.style.maxHeight) {
-        event.target.nextElementSibling.style.maxHeight = null;
+    // If current tab is already open
+    if(event.target.nextElementSibling.style.minHeight) {
+        event.target.nextElementSibling.style.minHeight = null;
         event.target.classList.remove("tabActive");
     } else {
-        event.target.nextElementSibling.style.maxHeight = event.target.scrollHeight + 50 + "px";
+        event.target.nextElementSibling.style.minHeight = "150px";
         event.target.nextElementSibling.classList.add("openPanel");event.target.classList.add("tabActive");
     }
 

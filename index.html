@@ -30,7 +30,7 @@ Hope you enjoy and feel free to send me feedback :) -->
 		<header class="welcome">
 			<div class="welcome-item" >
 				<h1>Hi, I'm Maggie Shan,</h1>
-				<div class="flip">
+				<div class="animate">
 					<h1 class="title" tabindex="0">a developer.</h1>	
 					<h1 class="title" tabindex="0">a designer.</h1>	
 					<h1 class="title" tabindex="0">a student.</h1>	
@@ -64,7 +64,7 @@ Hope you enjoy and feel free to send me feedback :) -->
 					<button class="accordian" onclick="togglePanel()" tabindex="0">About Me</button>
 					<div class="panel">
 						<p>This is about me</p>
-						<a href="#about">Learn more</a>
+						<a href="#">Learn more</a>
 					</div>
 					<button class="accordian" onclick="togglePanel()" tabindex="0">Skills</button>
 					<div class="panel">
@@ -78,19 +78,28 @@ Hope you enjoy and feel free to send me feedback :) -->
 					<button class="accordian" onclick="togglePanel()" tabindex="0">Works</button>
 					<div class="panel">
 						<p>Look at my projects</p>
-						<a href="#works">See my projects</a>
+						<a href="#">See my projects</a>
 					</div>
 				</div>
-				<div class="window"></div>
+				<div class="window">
+					<div class="circle min"></div>
+					<div class="circle max"></div>
+					<div class="circle close"></div>
+				    <div class="bar"></div>
+				</div>
 			</section>
 			
 			<section class="collage">
-				<div class="container">
-					<img src="" alt="">
-					<img src="" alt="">
-					<img src="" alt="">
-					<img src="" alt="">
-					<img src="" alt="">
+				<div class="row">
+					<a href="#" class="gallery-item gleft"><img src="./img/explore.svg" alt="1"></a>
+					<div class="column gright">
+						<a href="#" class="gallery-item"><img src="./img/projects.svg" alt="2"></a>
+						<a href="#" class="gallery-item"><img src="./img/resume.svg" alt="3"></a>
+					</div>
+				</div>
+				<div class="row">
+					<a href="#" class="gallery-item g1third"><img src="./img/projects.svg" alt="4"></a>
+					<a href="#" class="gallery-item gr2third"><img src="./img/maggie.svg" alt="5"></a>
 				</div>
 			</section>
 		</main>
