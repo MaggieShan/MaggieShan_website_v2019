@@ -1,0 +1,124 @@
+/********** General Sytling **********/
+* {margin: 0;}
+body {font-family: 'Montserrat', sans-serif;}
+body:nth-child(n) {outline-color: #5d5d5d;}
+p,li {font-family: 'Roboto', sans-serif;}
+strong {background-color: #FFEB93;}
+.stronger {
+	font-size: 2rem;
+	background-image: linear-gradient(#ffffff00 65%, #FF9D5B 55%);
+	display: inline;
+}
+h3 {text-align: center;}
+main { margin-top: 100px;}
+/********** Navigation bar **********/
+nav a {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: #2f2f2f;
+}
+nav {
+	margin: 25px 15vw 0px 15vw;
+	font-size: 1.6rem;
+}
+.logo {
+	margin-left: 10px;
+	display: inline;
+}
+.nav-items {
+	display: inline;
+	float: right;
+}
+.nav-items a {
+	margin-right: 30px;
+	padding: 0 5px 0 5px;
+	color: #5d5d5d;
+	background-position: 0 100%;
+    background-repeat: repeat-x;
+	background-size: 0px 0px;
+	background-image: linear-gradient(transparent 65%, #78CC87 55%);
+	transition: background-size .2s;
+}
+.nav-items a:hover {
+	background-size: 30px 30px;
+}
+.nav-items a:focus {
+	outline: 0;
+	border-radius: 5px;
+	background-size: 100px 100px;
+}
+.nav-toggle img {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	height: 40px;
+}
+a.current {color: #78CC87;}
+
+/* Introduction */
+.introduction {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 100px; 
+}
+.introduction ul li {
+	display: inline;
+}
+.about { 
+	width: 40%;
+	margin-left: 30px;
+}
+.about p {
+	margin-top: 15px;
+}
+.role {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+img.preview {
+	width: 300px;
+	height: 200px;
+	margin-right: 20px;
+}
+.description { 
+	width: 300px;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+/********** Media Queries **********/
+/*For XS screen*/
+@media (max-width: 800px) {
+	header h1 { 
+		font-size: 2.2rem;
+		text-align: center;
+	}
+	header p {font-size: 1.5rem;}
+	nav {
+		margin: 35px 20px 0px 20px;
+		font-size: 1.3rem
+	}
+	.nav-items a {margin-right: 15px;}
+	.introduction {
+		flex-wrap: wrap;
+	}
+	.about {
+		width: 75%;
+		text-align: justify;
+	}
+	.experiences {
+		width: 70vw;
+		margin: 0 auto;
+	}
+	.role {
+		flex-direction: column;
+	}
+}

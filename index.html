@@ -10,10 +10,12 @@ Hope you enjoy and feel free to send me feedback :) -->
 		<meta description="Maggie Shan's personal website to showcase her design and code portfolio">
 		
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto&display=swap" rel="stylesheet">
+		<!-- AOS library for scroll animations -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
 		<link rel="stylesheet" type="text/css" href="index-style.css">
 		<script src="script.js"></script>
 		
-		<link rel="shortcut icon" type="image/x-icon" href=".img/logo.png">
+		<link rel="shortcut icon" type="image/x-icon" href=".img/fav.png">
 		<title>Maggie Shan</title>
 	</head>
 	<body>
@@ -27,7 +29,7 @@ Hope you enjoy and feel free to send me feedback :) -->
 				<a href="#contact"><span class="animate">Contact</span></a>
 			</div>
 		</nav>
-		<header class="welcome">
+		<header class="welcome" data-aos="fade-up" data-aos-duration="1500">
 			<div class="welcome-item" >
 				<h1>Hi, I'm Maggie Shan,</h1>
 				<div class="animate">
@@ -42,7 +44,7 @@ Hope you enjoy and feel free to send me feedback :) -->
 			</div> 
 		</header>	
 		<main>
-			<section class="process">
+			<section class="process" data-aos="fade-up" data-aos-duration="1500">
 				<div class="process-item">
 					<img src="" alt="Explore">
 					<p><span class="stronger">Explore</span></p>
@@ -59,7 +61,7 @@ Hope you enjoy and feel free to send me feedback :) -->
 					<p class="highlight" tabindex="0">I am always looking for ways to improve and build scalable projects open to global audiences</p>
 				</div>
 			</section>
-			<section class="features">
+			<section class="features" data-aos="fade-up" data-aos-duration="1500">
 				<div class="tabs">
 					<button class="accordian" onclick="togglePanel()" tabindex="0">About Me</button>
 					<div class="panel">
@@ -71,7 +73,7 @@ Hope you enjoy and feel free to send me feedback :) -->
 						<ul>
 							<li>HTML/CSS/JS</li>
 							<li>Scheme/C/Java </li>
-							<li>Photoshop/Illustrator</li>
+							<li>Photoshop/Illustrator/Premiere</li>
 							<li>Sketch/Figma</li>
 						</ul>
 					</div>
@@ -81,7 +83,7 @@ Hope you enjoy and feel free to send me feedback :) -->
 						<a href="#">See my projects</a>
 					</div>
 				</div>
-				<div class="window">
+				<div class="window" tabindex="0">
 					<div class="circle min"></div>
 					<div class="circle max"></div>
 					<div class="circle close"></div>
@@ -89,7 +91,7 @@ Hope you enjoy and feel free to send me feedback :) -->
 				</div>
 			</section>
 			
-			<section class="collage">
+			<section class="collage" data-aos="fade-up" data-aos-duration="1500">
 				<div class="row">
 					<a href="#" class="gallery-item gleft"><img src="./img/explore.svg" alt="1"></a>
 					<div class="column gright">
@@ -123,5 +125,8 @@ Hope you enjoy and feel free to send me feedback :) -->
 			</div>
 			<small>&copy;Hand coded by Maggie Shan 2019</small>
 		</footer>
+		<!-- AOS library for scroll animations -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script> AOS.init(); </script>
 	</body>
 </html> 
