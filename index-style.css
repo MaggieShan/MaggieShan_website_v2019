@@ -85,13 +85,13 @@ a.current {color: #78CC87;}
 	overflow: hidden;
 }
 .title {
-	color: #FF9D5B;
+	color: #78CC87;
 	animation: hide 7s infinite;
 }
 .title:hover, .title:focus {
 	cursor: pointer;
 	color: transparent;
-	-webkit-text-stroke: 2px #FF9D5B;
+	-webkit-text-stroke: 2px #78CC87;
 	transition: 0.1s ease;
 	outline: 0;
 }
@@ -112,6 +112,7 @@ a.current {color: #78CC87;}
 	90% {opacity: 0;}
 	100% {opacity: 0;}
 }
+
 /********** Main Section **********/
 /* My Process */
 .process {
@@ -138,15 +139,12 @@ a.current {color: #78CC87;}
 	outline: 0;
 }
 /* Tabbed Menu Features */
-.features {
+.skills {
 	display: flex;
 	justify-content: center;
 	margin: 20vh 0;
 }
 button:focus {outline: 0; color: #78CC87;}
-.features a:focus {outline: 0; color: #FF9D5B;}
-.panel a:active {color: #FF9D5B}
-.features a:hover {color: #FF9D5B; transition: 0.2s;}
 .accordian {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.5rem;
@@ -160,7 +158,7 @@ button:focus {outline: 0; color: #78CC87;}
 .accordian:hover, .accordian:active {
 	cursor: pointer;
 	color: #78CC87;
-	transition: 0.5s linear;
+	transition: 0.3s linear;
 }
 .tabActive {
 	color: #78CC87;
@@ -190,23 +188,19 @@ button:focus {outline: 0; color: #78CC87;}
 }
 .window {
 	width: 600px;
-	height: 400px;
+	height: 450px;
 	margin-left: 20px;
 	background-color: #5d5d5d;
 	border-radius: 15px;
 	outline: 0;
 }
-.window:focus, .window:active {
-	transform: translateY(5px);
-	transition: 0.5s ease; 
-}
 .bar {
 	position: relative;
-	width: 98.5%;
+	width: 99.1%;
 	height: 40px;
-	border: 5px solid #5d5d5d;
+	border: 3px solid #5d5d5d;
 	border-radius: 15px;
-	background-color: white;
+	background: linear-gradient(120deg, white, #dbdbdb);
 }
 .circle {
 	height: 15px;
@@ -226,47 +220,11 @@ button:focus {outline: 0; color: #78CC87;}
 	background-color: #78CC87;
 }
 .close {
-	
 	background-color: #F48484;
 }
-/* Works Collage */
-.collage {
+/* Featured works */
+.featured {
 	margin-bottom: 20vh;
-}
-.row {
-	display: flex;
-	width: 100%;
-	height: 40vh;
-	align-items: stretch;
-	justify-content: center;
-}
-.column {
-	display: flex;
-	flex-direction: column;
-}
-.gallery-item {
-	overflow: hidden;
-	width: 100%;
-	outline: 0;
-}
-.gallery-item img:hover, .gallery-item img:focus { 
-	transform: scale(1.2);
-	transition: 1s ease;
-}
-.gallery-item img {
-	min-width: 100%;
-}
-.gleft {
-	width: 50%;
-}
-.gright {
-	width: 50%;
-}
-.g1third {
-    width: 35%;
-}
-.g2third {
-	width: 65%;
 }
 
 /********** Footer **********/
@@ -326,10 +284,9 @@ small {
 		100% {opacity: 0;}
 	}
 	.bar {
-		width: 97.5%;
+		width: 98.5%;
 	}
 } 
-
 /*For S screen*/
 @media (max-width: 1250px) {
 	.welcome {
@@ -348,7 +305,7 @@ small {
 		text-align: center;
 		margin: 25px 5px;
 	}
-	.features {
+	.skills {
 		flex-wrap: wrap;
 		margin: 10vh 0;
 	}
@@ -359,5 +316,5 @@ small {
 		margin-left: 0;
 		width: 85vw;
 	}
-	.collage {margin-bottom: 10vh;}
+	.featured {margin-bottom: 10vh;}
 }
