@@ -16,7 +16,6 @@ strong {background-color: #FFEB93;}
 	background-image: linear-gradient(#ffffff00 65%, #FF9D5B 55%);
 	display: inline;
 }
-h3 {text-align: center;}
 
 /********** Navigation bar **********/
 nav a {
@@ -118,7 +117,12 @@ a.current {color: #78CC87;}
 .process {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	margin-top: 30vh;
+	background-color: #effff1;
+	width: 100%;
+	height: 400px;
+	padding: 50px 0;
 }
 .process-item {
 	width: 300px;
@@ -222,23 +226,44 @@ button:focus {outline: 0; color: #78CC87;}
 .close {
 	background-color: #F48484;
 }
-/* Featured works */
-.featured {
-	margin-bottom: 20vh;
-}
 
 /********** Footer **********/
 footer {
-	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
-.textbox {
-	margin: 0 20vw;
-	text-align: left;
-	height: 55vh;
+footer h2 { 
+	font-size: 6rem;
+	line-height: 85px;
+	color: transparent;
+	-webkit-text-stroke: 2px #78CC87;
+}
+footer h2:hover, footer h2:focus {
+	outline: 0;
+	color: #78CC87;
+	transition: 0.5s;
+}
+footer h3 {
+	outline: 0;
+	font-size: 4rem;
+	color: #78CC87;
+	transition: 0.2s;
+}
+footer h3:hover, footer h3:focus {
+	color: transparent;
+	-webkit-text-stroke: 1.5px #78CC87;
 }
 #contact {
-	height: 60vh;
+	margin: 0 auto;
+	width: 65%;
+	text-align: left;
+	border-radius: 10%;
+}
+#contact:focus {
+	outline: 0;
+}
+.endInfo {
+	margin: 50px auto 0 auto;
+	text-align: center;
 }
 small {
 	color: #5d5d5d;
@@ -286,6 +311,16 @@ small {
 	.bar {
 		width: 98.5%;
 	}
+	footer h2{
+		font-size: 4.5rem;
+		line-height: 65px;
+	}
+	footer h3 {
+		font-size: 2.5rem;
+	}
+	#contact {
+		width: 80%;
+	}
 } 
 /*For S screen*/
 @media (max-width: 1250px) {
@@ -316,5 +351,7 @@ small {
 		margin-left: 0;
 		width: 85vw;
 	}
-	.featured {margin-bottom: 10vh;}
+	#contact {
+		width: 75%;
+	}
 }
