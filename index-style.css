@@ -233,11 +233,11 @@ footer {
 }
 footer h2 { 
 	font-size: 6rem;
-	line-height: 85px;
+	line-height: 95px;
 	color: transparent;
 	-webkit-text-stroke: 2px #78CC87;
 }
-footer h2:hover, footer h2:focus {
+footer h2:focus {
 	outline: 0;
 	color: #78CC87;
 	transition: 0.5s;
@@ -245,12 +245,16 @@ footer h2:hover, footer h2:focus {
 footer h3 {
 	outline: 0;
 	font-size: 4rem;
+	line-height: 65px;
 	color: #78CC87;
 	transition: 0.2s;
 }
-footer h3:hover, footer h3:focus {
+footer h3:focus {
 	color: transparent;
 	-webkit-text-stroke: 1.5px #78CC87;
+}
+footer h2:hover, footer h3:hover {
+	cursor: pointer;
 }
 #contact {
 	margin: 0 auto;
@@ -317,6 +321,8 @@ small {
 	}
 	footer h3 {
 		font-size: 2.5rem;
+		line-height: 45px;
+		margin-top: 20px;
 	}
 	#contact {
 		width: 80%;
