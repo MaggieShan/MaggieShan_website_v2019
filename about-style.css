@@ -4,7 +4,7 @@ body {font-family: 'Montserrat', sans-serif;}
 body:nth-child(n) {outline-color: #5d5d5d;}
 p,li {font-family: 'Roboto', sans-serif;}
 header h1 {
-	color: #181818;
+	color: #2f2f2f;
 	font-size: 4rem;
 	margin: 0;
 }
@@ -88,6 +88,7 @@ a.current {color: #78CC87;}
 .about p {
 	font-size: 1.3rem;
 	margin-top: 15px;
+	line-height: 35px;
 }
 
 /* Experiences */
