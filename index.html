@@ -8,11 +8,14 @@ Hope you enjoy and feel free to send me feedback :) -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta author="Maggie Shan">
 		<meta description="Maggie Shan's personal website to showcase her design and code portfolio">
-		
+		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto&display=swap" rel="stylesheet">
 		<!-- AOS library for scroll animations -->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+		<!-- Icons -->
+		<script src="https://kit.fontawesome.com/1e8b7421fa.js"></script>
 		<link rel="stylesheet" type="text/css" href="index-style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="script.js"></script>
 		
 		<link rel="shortcut icon" type="image/x-icon" href=".img/fav.png">
@@ -20,7 +23,7 @@ Hope you enjoy and feel free to send me feedback :) -->
 	</head>
 	<body>
 		<nav>
-			<div class="logo">
+			<div id="logo">
 				<a href="index.html"><img src="./img/name.svg"></a>
 			</div>
 			<div class="nav-items">
@@ -29,7 +32,7 @@ Hope you enjoy and feel free to send me feedback :) -->
 				<a href="#contact"><span class="animate">Contact</span></a>
 			</div>
 		</nav>
-		<header class="welcome" data-aos="fade-up" data-aos-duration="1500">
+		<header id="welcome" data-aos="fade-up" data-aos-duration="1500">
 			<div class="welcome-item" >
 				<h1>Hi, I'm Maggie Shan,</h1>
 				<div class="animate">
@@ -37,7 +40,7 @@ Hope you enjoy and feel free to send me feedback :) -->
 					<h1 class="title" tabindex="0">a designer.</h1>	
 					<h1 class="title" tabindex="0">a student.</h1>	
 				</div>
-				<p>I love creating ideas and solutions that <strong>come to life!</strong></strong></p>
+				<p>I love creating ideas and solutions that <strong>come to life!</strong></p>
 			</div>
 			<div class="welcome-item">
 				<img src="./img/maggie.svg">
@@ -66,15 +69,21 @@ Hope you enjoy and feel free to send me feedback :) -->
 					<button class="accordian" onclick="togglePanel()" tabindex="0">Development</button>
 					<div class="panel">
 						<ul>
-							<li>HTML/CSS/JS</li>
-							<li>Scheme/C/Java </li>
+							<li>HTML</li>
+							<li>CSS / Bootstrap</li>
+							<li>JavaScript / jQuery</li>
+							<li>C / Scheme / Python / Java</li>
 						</ul>
 					</div>
 					<button class="accordian" onclick="togglePanel()" tabindex="0">Design</button>
 					<div class="panel">
 						<ul>
-							<li>Photoshop/Illustrator/Premiere</li>
-							<li>Sketch/Figma/InVison</li>
+							<li>Adobe Photoshop</li>
+							<li>Adobe Illustrator</li>
+							<li>Adobe Premiere Pro</li>
+							<li>Sketch</li>
+							<li>Figma</li>
+							<li>InVison</li>
 						</ul>
 					</div>
 					<button class="accordian" onclick="togglePanel()" tabindex="0">Languages</button>
@@ -93,23 +102,36 @@ Hope you enjoy and feel free to send me feedback :) -->
 				    <div class="bar"></div>
 				</div>
 			</section>
-			
-			<section class="featured" data-aos="fade-up" data-aos-duration="1500">
-				
+			<section class="featured">
+				<a href="./work.html" data-aos="fade-up" data-aos-duration="1500">/ / Featured Works / /</a>
+				<a href="#" class="featured-item" data-aos="fade-up" data-aos-duration="1500">
+					<img src="" alt="">
+				</a>
+				<a href="#" class="featured-item" data-aos="fade-up" data-aos-duration="1500">
+					<img src="" alt="">
+				</a>
+				<a href="#" class="featured-item" data-aos="fade-up" data-aos-duration="1500">
+					<img src="" alt="">
+				</a>
 			</section>
 		</main>
-		<footer class="featured" data-aos="fade-up" data-aos-duration="1500">
+		<footer data-aos="fade-up" data-aos-duration="1500">
 			<div id="contact">
-				<h2 tabindex="0">Have a project idea? Just want some coffee?</h2>
-				<h3 tabindex="0">Perfect. Let's connect!</h3>
+				<div class="largeText" tabindex="0">
+					<h2>Have a project idea? Just want some coffee?</h2>
+					<h3>Perfect. </h3> 
+					<h3 class="accent">Let's connect!</h3>
+				</div>
 				<div class="endInfo">
 					<div class="icons">
-						<a href="#email"><img src="" alt="Email"></a>
-						<a href="#linkedin"><img src="" alt="Linkedin"></a>
-						<a href="#github"><img src="" alt="Github"></a>
-						<a href="#codepen"><img src="" alt="Codepen"></a>
+					<!-- Icons from https://fontawesome.com/license -->
+						<a href="mailto:sshan.maggie@gmail.com" alt="email"><i class="fas fa-paper-plane"></i></a>
+						<a href="https://www.linkedin.com/in/maggieshan/" alt="linkedin"><i class="fab fa-linkedin"></i></a>
+						<a href="https://github.com/MaggieShan" alt="github"><i class="fab fa-github"></i></a>
+						<a href="https://codepen.io/maggieshan/" alt="codepen"><i class="fab fa-codepen"></i></a>
 					</div>
 					<small>&copy;Hand coded by Maggie Shan 2019</small>
+					<a id="scrolltop" href="#logo"><i class="fas fa-chevron-circle-up"></i></a>
 				</div>
 			</div>
 		</footer>
