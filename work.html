@@ -12,15 +12,16 @@ Hope you enjoy and feel free to send me feedback :) -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto&display=swap" rel="stylesheet">
 		<!-- AOS library for scroll animations -->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+		<!-- Icons -->
+		<script src="https://kit.fontawesome.com/1e8b7421fa.js"></script>
 		<link rel="stylesheet" type="text/css" href="work-style.css">
-		<script src="script.js"></script>
-		
+	
 		<link rel="shortcut icon" type="image/x-icon" href=".img/fav.png">
 		<title>Work | Maggie Shan</title>
 	</head>
     <body>
         <nav>
-			<div class="logo">
+			<div id="logo">
 				<a href="index.html"><img src="./img/name.svg"></a>
 			</div>
 			<div class="nav-items">
@@ -38,7 +39,27 @@ Hope you enjoy and feel free to send me feedback :) -->
                 <a href="#" class="sm-project" data-aos="fade-up" data-aos-duration="1500"><img src="" alt=""></a>
                 <a href="#" class="sm-project" data-aos="fade-up" data-aos-duration="1500"><img src="" alt=""></a>
             </div>
-        </main>
+		</main>
+		<footer data-aos="fade-up" data-aos-duration="1500">
+			<div id="contact">
+				<div class="largeText" tabindex="0">
+					<h2>Have a project idea? Just want some coffee?</h2>
+					<h3>Perfect. </h3> 
+					<h3 class="accent">Let's connect!</h3>
+				</div>
+				<div class="endInfo">
+					<div class="icons">
+					<!-- Icons from https://fontawesome.com/license -->
+						<a href="mailto:sshan.maggie@gmail.com" alt="email"><i class="fas fa-paper-plane"></i></a>
+						<a href="https://www.linkedin.com/in/maggieshan/" alt="linkedin"><i class="fab fa-linkedin"></i></a>
+						<a href="https://github.com/MaggieShan" alt="github"><i class="fab fa-github"></i></a>
+						<a href="https://codepen.io/maggieshan/" alt="codepen"><i class="fab fa-codepen"></i></a>
+					</div>
+					<small>&copy;Hand coded by Maggie Shan 2019</small>
+					<a id="scrolltop" href="#logo"><i class="fas fa-chevron-circle-up"></i></a>
+				</div>
+			</div>
+		</footer>
         <!-- AOS library for scroll animations -->
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script> AOS.init(); </script>

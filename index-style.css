@@ -242,14 +242,23 @@ button:focus {outline: 0; color: #78CC87;}
 	font-size: 1.5rem;
 	margin-bottom: 15px;
 }
-.featured a:hover {
+.featured a:first-of-type:hover {
 	color: #FF9D5B;
+	transition: 0.2s;
 }
 .featured-item {
 	width: 65vw;
 	height: 30vw;
 	background-color: #78CC87;
 	margin-bottom: 50px;
+	border-radius: 15px;
+}
+.featured-item:hover {
+	-webkit-transform: scale(0.98);
+	-moz-transform: scale(0.98);
+	-o-transform: scale(0.98);
+	transform: scale(0.98);
+	transition: 0.2s;
 }
 /********** Footer **********/
 footer {

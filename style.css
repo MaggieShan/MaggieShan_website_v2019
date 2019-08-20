@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+}
+
+header h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: #181818;
+	font-size: 3rem;
+	margin: 0;
+}
+
+#title {
+	color: #FF9D5B;
+}
+
+header h2, h4 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+header {
+	text-align: center;
+}
+
+header p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.7rem;
+}
+
+strong {
+	background-color: #FFE191;
+}
+
+nav a {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: #2f2f2f;
+}
+
+nav {
+	margin: 25px 15vw 0px 15vw;
+	font-size: 1.6rem;
+}
+
+.logo {
+	margin-left: 10px;
+	display: inline;
+}
+
+.nav-items {
+	display: inline;
+	float: right;
+}
+
+.nav-items a {
+	margin-right: 30px;
+	color: #5d5d5d;
+}
+
+.nav-items a:hover {
+	padding-bottom: 5px;
+	border-bottom: 10px solid #78CC87;
+	border-radius: 2px;
+}
+
+.nav-toggle img {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	height: 40px;
+}
+
+a.current {
+	color: #78CC87;
+}
+
+
+/*For XS screen*/
+@media (max-width: 800px) {
+	h1 { 
+		font-size: 2rem;
+		text-align: center;
+	}
+	header p {
+		font-size: 1.3rem;
+	}
+	nav {
+		margin: 35px 20px 0px 20px;
+		font-size: 1.3rem
+	}
+	.nav-items a {
+		margin-right: 15px;
+	}
+}
