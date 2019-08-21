@@ -33,7 +33,13 @@ nav {
 }
 #logo {
 	margin-left: 10px;
-	display: inline;
+	display: inline-block;
+	width: 70px;
+	height: 35px;
+	background-image: url(./img/logo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 .nav-items {
 	display: inline;
@@ -253,7 +259,13 @@ button:focus {outline: 0; color: #78CC87;}
 	background-color: #78CC87;
 	margin-bottom: 50px;
 	border-radius: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90%;
 }
+.mymealmaps{background-image: url(./img/mymealmaps.png);}
+.pomato{background-image: url(./img/pomato.png);}
+.portfolio{background-image: url(./img/portfolio.png);}
 .featured-item:hover {
 	-webkit-transform: scale(0.98);
 	-moz-transform: scale(0.98);
@@ -392,6 +404,10 @@ small {
 	nav {
 		margin: 35px 20px 0px 20px;
 		font-size: 1.3rem
+	}
+	#logo {
+		width: 55px;
+		height: 25px; 
 	}
 	.nav-items a {margin-right: 15px;}
 	.stronger {font-size: 1.5rem;}

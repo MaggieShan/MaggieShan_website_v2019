@@ -32,7 +32,13 @@ nav {
 }
 #logo {
 	margin-left: 10px;
-	display: inline;
+	display: inline-block;
+	width: 70px;
+	height: 35px;
+	background-image: url(./img/logo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 .nav-items {
 	display: inline;
@@ -78,8 +84,18 @@ main {
     width: 67vw;
     height: 500px;
     margin-top: 50px;
-    border-radius: 15px;
+	border-radius: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90%;
 }
+.portfolio {background-image: url(./img/portfolio.png);}
+.mymealmaps {background-image: url(./img/mymealmaps.png);}
+.pomato {background-image: url(./img/pomato.png);}
+.releaf {background-image: url(./img/releaf.png);}
+.explore {background-image: url(./img/explore.png);}
+.uxchallenges {background-image: url(./img/uxchallenges.png);}
+.purecss {background-image: url(./img/purecss.png);}
 .project-row {
     display: flex;
     justify-content: center;
@@ -171,7 +187,7 @@ small {
     .project {
         width: 85vw;
         height: 300px;
-        margin-top: 25px;
+		margin-top: 25px;
     }
     .sm-project {
         width: 27vw;
@@ -201,6 +217,10 @@ small {
 	nav {
 		margin: 35px 20px 0px 20px;
 		font-size: 1.3rem
+	}
+	#logo {
+		width: 55px;
+		height: 25px; 
 	}
     .nav-items a {margin-right: 15px;}
     .project-row {
