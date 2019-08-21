@@ -1,0 +1,256 @@
+/********** General Sytling **********/
+* {margin: 0; scroll-behavior: smooth;}
+body {font-family: 'Montserrat', sans-serif;}
+body:nth-child(n) {outline-color: #5d5d5d;}
+p,li {font-family: 'Roboto', sans-serif;}
+header h1 {
+	color: #2f2f2f;
+	font-size: 4rem;
+	margin: 0;
+}
+header {text-align: left;}
+header p {font-size: 1.7rem;}
+strong {background-image: linear-gradient(#ffffff00 65%, #FF9D5B 55%);}
+.stronger {
+	font-size: 2rem;
+	background-image: linear-gradient(#ffffff00 65%, #FF9D5B 55%);
+	display: inline;
+}
+.accent {
+	color: #FF9D5B;
+}
+
+/********** Navigation bar **********/
+nav a {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: #2f2f2f;
+}
+nav {
+	margin: 25px 15vw 0px 15vw;
+	font-size: 1.6rem;
+}
+#logo {
+	margin-left: 10px;
+	display: inline;
+}
+.nav-items {
+	display: inline;
+	float: right;
+}
+.nav-items a {
+	margin-right: 30px;
+	padding: 0 5px 0 5px;
+	color: #5d5d5d;
+	background-position: 0 100%;
+    background-repeat: repeat-x;
+	background-size: 0px 0px;
+	background-image: linear-gradient(transparent 65%, #78CC87 55%);
+	transition: background-size .2s;
+}
+.nav-items a:hover {
+	background-size: 30px 30px;
+}
+.nav-items a:focus {
+	outline: 0;
+	border-radius: 5px;
+	background-size: 100px 100px;
+}
+.nav-toggle img {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	height: 40px;
+}
+a.current {color: #78CC87;}
+
+/* Work Page Specific Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.project {
+    background-color: #78CC87;
+    width: 67vw;
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.project-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.sm-project {
+    background-color: #78CC87;
+    width: 21.5vw;
+    height: 400px;
+    margin: 50px 10px;
+    border-radius: 15px;
+}
+/********** Footer **********/
+footer {
+	margin-bottom: 20px;
+}
+footer h2 { 
+	font-size: 6rem;
+	line-height: 95px;
+	color: transparent;
+	-webkit-text-stroke: 2px #78CC87;
+}
+footer h3 {
+	font-size: 4rem;
+	line-height: 70px;
+	color: #78CC87;
+	transition: 0.2s;
+	display: inline;
+}
+footer h2:hover, footer h3:hover {
+	cursor: default;
+}
+#contact {
+	margin: 0 auto;
+	width: 65%;
+	text-align: left;
+}
+.largeText:focus {
+	outline: 0;
+}
+.endInfo {
+	margin: 50px auto 0 auto;
+	text-align: center;
+}
+.icons::before {
+	content: "";
+	display: block;
+	width: 65%; 
+	height: 5px; 
+	background-color: #78CC87;
+	border-bottom: 40px solid white;
+	border-top: 3px solid white;
+	margin: 60px auto 0 auto;
+	position: absolute;
+	z-index: 2;
+}
+.icons a {
+	color: #378546;
+	font-size: 4rem;
+	margin: 0 auto;
+}
+.fa-codepen, .fa-linkedin, .fa-github, .fa-paper-plane { 
+	padding: 30px 40px;
+}
+.fa-codepen:hover, .fa-linkedin:hover, .fa-github:hover, .fa-paper-plane:hover {
+	transform: translateY(-35px);
+	transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	color: #FF9D5B;
+}
+small {
+	color: #5d5d5d;
+}
+#scrolltop {
+	position: absolute;
+	font-size: 6rem;
+	color: #c5f5ce;
+	left: 85%;
+	bottom: 25%;
+	z-index: 3;
+}
+#scrolltop:hover {
+	transform: translateY(20px);
+	color: #78CC87;
+	transition: 0.5s;
+}
+/********** Media Queries **********/
+/* For S screen */
+@media (max-width: 1250px) {
+    .project {
+        width: 85vw;
+        height: 300px;
+        margin-top: 25px;
+    }
+    .sm-project {
+        width: 27vw;
+        height: 200px;
+        margin: 25px 10px;
+    }
+    #contact {
+		width: 75%;
+	}
+	.endInfo {
+		text-align: left;
+	}
+	footer h2 {
+		line-height: 100px;
+		margin-bottom: 20px;
+	}
+	footer h3 {
+		display: block;
+		line-height: 65px;
+	}
+	.icons::before {
+		width: 75%;
+	}
+}
+/*For XS screen*/
+@media (max-width: 800px) {
+	nav {
+		margin: 35px 20px 0px 20px;
+		font-size: 1.3rem
+	}
+    .nav-items a {margin-right: 15px;}
+    .project-row {
+        flex-wrap: wrap;
+        margin-top: 10px
+    }
+    .sm-project { 
+        width: 85vw;
+        height: 300px;
+        margin: 10px 0;
+    }
+    footer h2 {
+		font-size: 4.5rem;
+		line-height: 75px;
+		margin-bottom: 20px;
+	}
+	footer h3 {
+		font-size: 2.5rem;
+		line-height: 40px;
+	}
+	#contact {
+		width: 80%;
+	}
+	.icons::before {
+		margin-top: 50px;
+	}
+	.icons {
+		text-align: left;
+	}
+	.icons a {
+		font-size: 3rem;
+	}
+	.fa-codepen, .fa-linkedin, .fa-github, .fa-paper-plane { 
+		padding: 30px 15px;
+	}
+	#scrolltop {
+		font-size: 3.5rem;
+		left: 75%;
+		bottom: 25%;
+	}
+} 
+
+/* Browser Support */
+/* IE */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	strong, .stronger {
+		color: #FF9D5B;
+		font-weight: 700;
+	}
+	footer h2 {
+		color: #78CC87;
+	}
+}
