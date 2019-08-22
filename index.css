@@ -263,8 +263,8 @@ button:focus {outline: 0; color: #78CC87;}
 	background-repeat: no-repeat;
 	background-size: 90%;
 }
-.mymealmaps{background-image: url(./img/mymealmaps.png);}
-.pomato{background-image: url(./img/pomato.png);}
+.mymealmaps{background-image: url(./img/mymealmaps.png); background-color: antiquewhite;}
+.pomato{background-image: url(./img/pomato.png); background-color: #ea6363}
 .portfolio{background-image: url(./img/portfolio.png);}
 .featured-item:hover {
 	-webkit-transform: scale(0.98);

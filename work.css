@@ -80,34 +80,37 @@ main {
     margin-top: 100px;
 }
 .project {
-    background-color: #78CC87;
     width: 67vw;
     height: 500px;
     margin-top: 50px;
-	border-radius: 15px;
-	background-position: center;
-	background-repeat: no-repeat;
 	background-size: 90%;
 }
-.portfolio {background-image: url(./img/portfolio.png);}
-.mymealmaps {background-image: url(./img/mymealmaps.png);}
-.pomato {background-image: url(./img/pomato.png);}
-.releaf {background-image: url(./img/releaf.png);}
-.explore {background-image: url(./img/explore.png);}
-.uxchallenges {background-image: url(./img/uxchallenges.png);}
-.purecss {background-image: url(./img/purecss.png);}
 .project-row {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+	flex-wrap: nowrap;
 }
 .sm-project {
-    background-color: #78CC87;
     width: 21.5vw;
     height: 400px;
     margin: 50px 10px;
-    border-radius: 15px;
+	border-radius: 15px;
+	background-size: 140%;
 }
+.project, .sm-project {
+	background-color: #78CC87;
+	border-radius: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.portfolio {background-image: url(./img/portfolio.png); background-color: #78CC87;}
+.mymealmaps {background-image: url(./img/mymealmaps.png); background-color: #faebd7;}
+.pomato {background-image: url(./img/pomato.png); background-color: #ea6363; background-position: center bottom;}
+.releaf {background-image: url(./img/releaf.png); background-color: #bfdfae; background-position: center bottom;}
+.explore {background-image: url(./img/explore.png); background-color: #f2d7e8; background-position: center bottom;}
+.uxchallenges {background-image: url(./img/roster.png); background-color: #f2c85f; background-position: center bottom;}
+.purecss {background-image: url(./img/purecss.png); background-color: #eaeaea; background-position: center bottom;}
+
 /********** Footer **********/
 footer {
 	margin-bottom: 20px;
@@ -226,7 +229,10 @@ small {
     .project-row {
         flex-wrap: wrap;
         margin-top: 10px
-    }
+	}
+	.project, .sm-project {
+		background-size: 130%;
+	}
     .sm-project { 
         width: 85vw;
         height: 300px;
