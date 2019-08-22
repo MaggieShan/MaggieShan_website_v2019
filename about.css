@@ -81,8 +81,31 @@ a.current {color: #78CC87;}
 .introduction-item {
 	width: 300px;
 }
+.left {
+	margin-right: 20px;
+}
+.introduction img {
+	width: 95%;
+	margin-top: 10px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px #5d5d5d;
+}
 .introduction a {
 	display: block;
+	width: 80%;
+	padding: 5px;
+	margin: 50px auto 0 auto;
+	color: #78CC87;
+	border: 5px solid #78CC87;
+	border-radius: 15px;
+	font-size: 1.5rem;
+	text-decoration: none;
+	text-align: center;
+}
+.introduction a:hover {
+	color: white;
+	background-color: #78CC87;
+	transition: 0.5s;
 }
 .introduction h2 { 
 	font-size: 3rem;
