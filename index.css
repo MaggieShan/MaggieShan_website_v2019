@@ -139,6 +139,16 @@ a.current {color: #78CC87;}
 	margin: 0 20px 0 20px;
 	text-align: center;
 }
+.process-img { 
+	width: 200px;
+	height: 100px;
+	margin: 0 auto;
+	background-position: center;
+	background-size: 100%;
+}
+.explore {background-image: url(./img/plant1.png);}
+.create {background-image: url(./img/plant2.png); height: 150px; background-position: center top;}
+.extend {background-image: url(./img/plant3.png); height: 150px; background-position: center top;}
 .highlight {
 	font-size: 1.3rem;
 	display: inline;
@@ -362,10 +372,6 @@ small {
 		justify-content: center;
 	}
 	.welcome-item {min-width: 0;}
-	.welcome-item img {
-		margin: 0 auto;
-		margin-top: 70px;
-	}
 	.welcome-item p {margin: 25px 5px;}
 	.process {height: 50vw;}
 	.skills {
@@ -417,8 +423,13 @@ small {
 	.nav-items a {margin-right: 15px;}
 	.stronger {font-size: 1.5rem;}
 	.welcome-item p {text-align: center;}
-	.process {flex-wrap: wrap; height: 100vw;}
+	.process {flex-wrap: wrap; height: 170vw;}
 	.process-item {width: 400px; margin-bottom: 50px; text-align: left;}
+	.process-img { 
+		margin: 0;
+		width: 100px;
+		background-size: 200%;
+	}
 	.highlight {font-size: 1.2rem;}
 	.animate {
 		height: 45px;
