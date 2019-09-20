@@ -43,7 +43,6 @@ nav {
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
-
 .nav-items {
 	display: inline;
 	float: right;
@@ -75,12 +74,22 @@ nav {
 a.current {color: #78CC87;}
 
 /********** Header **********/
+header {
+	width: 100%;
+	height: 550px;;
+	background-color: #f2d7e8;
+	position: absolute;
+	top: 0%;
+	z-index: -1;
+	background-image: url(../img/explore.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 1200px 700px;
+}
 header img {
-    top: 0%;
-    height: 550px;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
+    height: 350px;
+    width: auto;
+    margin: 0 auto;
 }
 
 /********** Main **********/
@@ -95,6 +104,17 @@ main {
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-bottom: 50px;
+}
+.intro a {
+	text-decoration: none;
+	margin-right: 20px;
+}
+.intro a:hover {
+	border-bottom: 5px solid #FF9D5B;
+	transition: 0.2s;
+}
+.intro a:visited {
+	color: #FF9D5B;
 }
 .summary {
     min-width: 400px;
@@ -116,13 +136,19 @@ ul {
 	margin-bottom: 50px;
 }
 .comparison {
+	margin-top: 50px;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
 }
 .comparison img {
+	height: 375px;
+	width: 360px;
+}
+.comparison iframe {
 	width: 700px;
-	height: 100%;
+	height: 400px;
+	margin-bottom: 50px;
 }
 
 /********** Footer **********/
@@ -203,7 +229,10 @@ small {
 /********** Media Queries **********/
 /* For S screen */
 @media (max-width: 1250px) {
-    .intro {
+	header {
+		background-size: 800px 500px;
+	}
+	.intro {
         flex-wrap: wrap;
     }
     .skills {
@@ -220,6 +249,13 @@ small {
 	}
 	.comparison {
 		flex-wrap: wrap;
+	}
+	.comparison img {
+		height: 80%;
+		width: 500px;
+	}
+	.process img {
+		margin: 0;
 	}
     #contact {
 		width: 75%;

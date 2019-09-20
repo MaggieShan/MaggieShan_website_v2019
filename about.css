@@ -93,16 +93,20 @@ a.current {color: #78CC87;}
 .introduction a {
 	display: block;
 	width: 80%;
-	padding: 5px;
-	margin: 10px auto 0 auto;
-	color: #78CC87;
-	font-size: 1.5rem;
+	padding: 3px;
+	margin: 15px auto 0 auto;
+	color: #2f2f2f;
+	font-size: 2rem;
 	text-decoration: none;
 	text-align: center;
+	background-position: 0 100%;
+    background-repeat: repeat-x;
+	background-size: 0px 0px;
+	background-image: linear-gradient(transparent 65%, #FF9D5B 55%);
+	transition: background-size .2s;
 }
 .introduction a:hover {
-	color: #FF9D5B;
-	transition: 0.5s;
+	background-size: 10px 55px;
 }
 .introduction h2 { 
 	font-size: 3rem;
@@ -217,8 +221,8 @@ small {
 	.introduction {
 		flex-wrap: wrap;
 	}
-	.introduction h2 {text-align: left;}
-	.about {margin: 0;}
+	.introduction h2 {text-align: center;}
+	.about {margin: 50px 0 0 0;}
 	#contact {
 		width: 75%;
 	}
