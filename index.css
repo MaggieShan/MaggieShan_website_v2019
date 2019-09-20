@@ -78,7 +78,7 @@ a.current {color: #78CC87;}
 	justify-content: center;
 	align-items: center;
 	margin: 5vw;
-	margin-top: 150px;
+	margin-top: 140px;
 	margin-bottom: 200px;
 	height: 50vh;
 }
@@ -365,13 +365,14 @@ small {
 /*For S screen*/
 @media (max-width: 1250px) {
 	#welcome {
-		margin-top: 150px;
+		margin-top: 130px;
 		margin-bottom: 250px;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 	}
 	.welcome-item {min-width: 0;}
+	.welcome-item img {margin: 0;}
 	.welcome-item p {margin: 25px 5px;}
 	.process {height: 50vw;}
 	.skills {
@@ -433,7 +434,7 @@ small {
 	.highlight {font-size: 1.2rem;}
 	.animate {
 		height: 45px;
-		width: 420px;
+		width: 95%;
 		overflow: hidden;
 	}
 	@keyframes show {
