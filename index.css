@@ -84,7 +84,7 @@ a.current {color: #78CC87;}
 }
 .welcome-item {min-width: 500px; outline: 0;}
 .welcome-item img {
-	max-width: 450px;
+	max-width: 500px;
 	width: 100%;
 	margin-left: 20px;
 }
@@ -146,9 +146,6 @@ a.current {color: #78CC87;}
 	background-position: center;
 	background-size: 100%;
 }
-.explore {background-image: url(./img/plant1.png);}
-.create {background-image: url(./img/plant2.png); height: 150px; background-position: center top;}
-.extend {background-image: url(./img/plant3.png); height: 150px; background-position: center top;}
 .highlight {
 	font-size: 1.3rem;
 	display: inline;
